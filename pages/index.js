@@ -22,7 +22,7 @@ export default function Home() {
             return (
               <li key={id} className={styles.card}>
                 <a href="#">
-                  <Image src={image} alt={title} />
+                  <img src={image} alt={title} />
                   <h3>{title}</h3>
                   <p>${price}</p>
                   <p>
