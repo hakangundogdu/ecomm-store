@@ -22,7 +22,7 @@ export default function Home() {
             return (
               <li key={id} className={styles.card}>
                 <a href="#">
-                  <img src={image} alt={title} />
+                  <Image src={image} alt={title} />
                   <h3>{title}</h3>
                   <p>${price}</p>
                   <p>
@@ -43,7 +43,11 @@ export default function Home() {
       <footer>
         <section className={styles.footer}>
           Made by{' '}
-          <a href="https://github.com/hakangundogdu" target="_blank">
+          <a
+            href="https://github.com/hakangundogdu"
+            target="_blank"
+            rel="noreferrer"
+          >
             Hakan Gundogdu
           </a>
         </section>
