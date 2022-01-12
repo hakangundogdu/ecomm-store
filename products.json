@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Baby Diaper",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "image": "./images/1.jpg",
+    "price": 10
+  },
+  {
+    "title": "Baby Diaper",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "image": "./images/2.jpg",
+    "price": 10
+  },
+  {
+    "title": "Baby Diaper",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "image": "./images/3.jpg",
+    "price": 15
+  },
+  {
+    "title": "Baby Diaper",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "image": "./images/4.jpg",
+    "price": 20
+  }
+]
