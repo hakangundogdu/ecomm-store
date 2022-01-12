@@ -1,26 +1,50 @@
 [
   {
-    "title": "Baby Diaper",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
     "image": "./images/1.jpg",
     "price": 10
   },
   {
-    "title": "Baby Diaper",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
     "image": "./images/2.jpg",
     "price": 10
   },
   {
-    "title": "Baby Diaper",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
     "image": "./images/3.jpg",
     "price": 15
   },
   {
-    "title": "Baby Diaper",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
     "image": "./images/4.jpg",
+    "price": 20
+  },
+  {
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "./images/5.jpg",
+    "price": 15
+  },
+  {
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "./images/6.jpg",
+    "price": 20
+  },
+  {
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "./images/7.jpg",
+    "price": 15
+  },
+  {
+    "title": "Baby Clothing",
+    "description": "Lorem ipsum dolor sit amet",
+    "image": "./images/8.jpg",
     "price": 20
   }
 ]
