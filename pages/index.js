@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import products from '../products.json';
 import { HiShoppingBag } from 'react-icons/hi';
-import useCart from '../hooks/use-cart';
+import { useCart } from '../hooks/use-cart';
 
 export default function Home() {
   const { subtotal, totalItems, addToCart, checkout } = useCart();
@@ -16,8 +17,6 @@ export default function Home() {
         <link rel="icon" href="/baby.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to MEG Shop!</h1>
-
         <p className={styles.description}>High-quality clothing for babies.</p>
 
         <ul className={styles.cart}>
@@ -43,21 +42,24 @@ export default function Home() {
             const { id, title, image, price } = product;
             return (
               <li key={id} className={styles.card}>
-                <a href="#">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <p>${price}</p>
-                  <p>
-                    <button
-                      className={styles.button}
-                      onClick={() => {
-                        addToCart({ id });
-                      }}
-                    >
-                      Add to Cart
-                    </button>
-                  </p>
-                </a>
+                <Link href="#">
+                  <a>
+                    <img src={image} alt={title} />
+                    <h3>{title}</h3>
+                    <p>${price}</p>
+                  </a>
+                </Link>
+
+                <p>
+                  <button
+                    className={styles.button}
+                    onClick={() => {
+                      addToCart({ id });
+                    }}
+                  >
+                    Add to Cart
+                  </button>
+                </p>
               </li>
             );
           })}
