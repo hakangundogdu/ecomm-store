@@ -3,56 +3,56 @@
     "id": "price_1KHDFCJdziB3RFdwZKULwAzm",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/1.jpg",
+    "image": "/images/1.jpg",
     "price": 10
   },
   {
     "id": "price_1KHDFcJdziB3RFdw0wEijY83",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/2.jpg",
+    "image": "/images/2.jpg",
     "price": 10
   },
   {
     "id": "price_1KHDFqJdziB3RFdwHcguSYCq",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/3.jpg",
+    "image": "/images/3.jpg",
     "price": 15
   },
   {
     "id": "price_1KHDGDJdziB3RFdwfQYimVYm",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/4.jpg",
+    "image": "/images/4.jpg",
     "price": 20
   },
   {
     "id": "price_1KHDHpJdziB3RFdwM6lYFhU2",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/5.jpg",
+    "image": "/images/5.jpg",
     "price": 15
   },
   {
     "id": "price_1KHDI7JdziB3RFdwziu2wmk1",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/6.jpg",
+    "image": "/images/6.jpg",
     "price": 20
   },
   {
     "id": "price_1KHDIOJdziB3RFdwbvrYVwyD",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/7.jpg",
+    "image": "/images/7.jpg",
     "price": 15
   },
   {
     "id": "price_1KHDIaJdziB3RFdwQ7ogV3E2",
     "title": "Baby Clothing",
     "description": "Lorem ipsum dolor sit amet",
-    "image": "./images/8.jpg",
+    "image": "/images/8.jpg",
     "price": 20
   }
 ]

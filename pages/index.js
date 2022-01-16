@@ -42,7 +42,7 @@ export default function Home() {
             const { id, title, image, price } = product;
             return (
               <li key={id} className={styles.card}>
-                <Link href="#">
+                <Link href={`/products/${id}`}>
                   <a>
                     <img src={image} alt={title} />
                     <h3>{title}</h3>

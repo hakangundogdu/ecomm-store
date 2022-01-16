@@ -3,7 +3,7 @@ import styles from '../../styles/Product.module.css';
 
 import { useCart } from '../../hooks/use-cart.js';
 
-import products from '../../../shared/products.json';
+import products from '../../products.json';
 
 export default function Product({ product }) {
   const { id, title, image, price, description } = product;
@@ -13,7 +13,7 @@ export default function Product({ product }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{title} - Space Jelly</title>
+        <title>MEG SHOP</title>
         <link rel="icon" href="/baby.ico" />
       </Head>
 
