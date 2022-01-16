@@ -7,7 +7,7 @@ import { HiShoppingBag } from 'react-icons/hi';
 import { useCart } from '../hooks/use-cart';
 
 export default function Home() {
-  const { subtotal, totalItems, addToCart, checkout } = useCart();
+  const { subtotal, quantity, addToCart, checkout } = useCart();
 
   return (
     <div className={styles.container}>
@@ -21,7 +21,7 @@ export default function Home() {
 
         <ul className={styles.cart}>
           <li>
-            <strong>Items:</strong> {totalItems}
+            <strong>Items:</strong> {quantity}
           </li>
           <li>
             <strong>Total:</strong> ${subtotal}

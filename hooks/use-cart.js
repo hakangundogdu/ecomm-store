@@ -40,7 +40,7 @@ export function useCartState() {
     0
   );
 
-  const totalItems = cartItems.reduce((accumulator, { quantity }) => {
+  const quantity = cartItems.reduce((accumulator, { quantity }) => {
     return accumulator + quantity;
   }, 0);
 
@@ -60,6 +60,17 @@ export function useCartState() {
     });
   }
 
+  function updateItem({ id, quantity }) {
+    updateCart((prev) => {
+      let cart = { ...prev };
+
+      if (cart.products[id]) {
+        cart.products[id].quantity = quantity;
+      }
+      return cart;
+    });
+  }
+
   function checkout() {
     initiateCheckout({
       lineItems: cartItems.map((item) => {
@@ -74,9 +85,11 @@ export function useCartState() {
   return {
     cart,
     updateCart,
+    cartItems,
     subtotal,
-    totalItems,
+    quantity,
     addToCart,
+    updateItem,
     checkout,
   };
 }
