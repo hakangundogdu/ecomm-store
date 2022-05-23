@@ -11,18 +11,18 @@ export const CartContext = createContext();
 export function useCartState() {
   const [cart, updateCart] = useState(defaultCart);
 
-  useEffect(() => {
-    const stateFromStorage = window.localStorage.getItem('MEG_Shop_cart');
-    const data = stateFromStorage && JSON.parse(stateFromStorage);
-    if (data) {
-      updateCart(data);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const stateFromStorage = window.localStorage.getItem('MEG_Shop_cart');
+  //   const data = stateFromStorage && JSON.parse(stateFromStorage);
+  //   if (data) {
+  //     updateCart(data);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    const data = JSON.stringify(cart);
-    window.localStorage.setItem('MEG_Shop_cart', data);
-  }, [cart]);
+  // useEffect(() => {
+  //   const data = JSON.stringify(cart);
+  //   window.localStorage.setItem('MEG_Shop_cart', data);
+  // }, [cart]);
 
   const cartItems = Object.keys(cart.products).map((key) => {
     const product = products.find(({ id }) => `${id}` === `${key}`);
@@ -30,6 +30,7 @@ export function useCartState() {
     return {
       ...cart.products[key],
       pricePerItem: product.price,
+      title: product.title,
     };
   });
 
@@ -40,7 +41,7 @@ export function useCartState() {
     0
   );
 
-  const quantity = cartItems.reduce((accumulator, { quantity }) => {
+  const totalQuantity = cartItems.reduce((accumulator, { quantity }) => {
     return accumulator + quantity;
   }, 0);
 
@@ -55,6 +56,19 @@ export function useCartState() {
           id,
           quantity: 1,
         };
+      }
+      return cart;
+    });
+  }
+
+  function removeItem({ id }) {
+    updateCart((prev) => {
+      let cart = { ...prev };
+
+      if (cart.products[id].quantity === 1) {
+        delete cart.products[id];
+      } else {
+        cart.products[id].quantity = cart.products[id].quantity - 1;
       }
       return cart;
     });
@@ -87,8 +101,9 @@ export function useCartState() {
     updateCart,
     cartItems,
     subtotal,
-    quantity,
+    totalQuantity,
     addToCart,
+    removeItem,
     updateItem,
     checkout,
   };

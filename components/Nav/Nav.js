@@ -7,7 +7,7 @@ import styles from './Nav.module.css';
 import { useCart } from '../../hooks/use-cart.js';
 
 const Nav = () => {
-  const { quantity } = useCart();
+  const { totalQuantity } = useCart();
   return (
     <nav className={styles.nav}>
       <p className={styles.navTitle}>
@@ -15,9 +15,9 @@ const Nav = () => {
       </p>
 
       <p className={styles.navCart}>
-        <Link href="/cart">
+        <Link href="/cart2">
           <a>
-            <HiShoppingBag /> {quantity}
+            <HiShoppingBag /> {totalQuantity}
           </a>
         </Link>
       </p>

@@ -12,15 +12,6 @@
   align-items: center;
 }
 
-.footer {
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  color: #475569;
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
@@ -29,22 +20,21 @@
 
 .description {
   text-align: center;
-}
-
-.description {
   margin: 4rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  color: #0a2540;
 }
 
 .grid {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 80%;
   list-style: none;
   height: stretch;
+  padding-inline-start: 0;
 }
 
 .card {
