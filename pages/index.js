@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css';
 import products from '../products.json';
 import { HiShoppingBag } from 'react-icons/hi';
 import { useCart } from '../hooks/use-cart';
-import Image from 'next/image';
 
 export default function Home() {
   const { subtotal, totalQuantity, addToCart, checkout } = useCart();
@@ -18,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/baby.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.description}>
+        {/* <h1 className={styles.description}>
           High-quality clothing for babies.
         </h1>
 
@@ -38,35 +37,7 @@ export default function Home() {
               Check Out
             </button>
           </li>
-        </ul>
-
-        <ul className={styles.grid}>
-          {products.map((product) => {
-            const { id, title, image, price } = product;
-            return (
-              <li key={id} className={styles.card}>
-                <Link href={`/products/${id}`}>
-                  <a>
-                    <img src={image} alt={title} />
-                    <h3>{title}</h3>
-                    <p>${price}</p>
-                  </a>
-                </Link>
-
-                <p>
-                  <button
-                    className={styles.button}
-                    onClick={() => {
-                      addToCart({ id });
-                    }}
-                  >
-                    Add to Cart
-                  </button>
-                </p>
-              </li>
-            );
-          })}
-        </ul>
+        </ul> */}
 
         <ul className={styles.grid}>
           {products.map((product) => {
